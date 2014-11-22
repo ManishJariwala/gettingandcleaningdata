@@ -24,7 +24,7 @@ colnames(xtest) <- features[,2]
 #step 5 - combine xtrain and xtest data. This will create a full dataset of observation of 10,299 row and 561 colum
 xdata <- rbind(xtrain, xtest)
 
-#step 6 - xdata_mean stores all those columns that have word mearn() in the column names. Repeate the same for std(). And then combine the columns
+#step 6 - xdata_mean stores all those columns that have word mean() in the column names. Repeate the same for std(). And then combine the columns
 xdata_mean <- xdata[,grep("mean()",names(xdata),fixed=TRUE)]
 xdata_std <- xdata[,grep("std()",names(xdata),fixed=TRUE)]
 xdata <- cbind(xdata_mean,xdata_std)
