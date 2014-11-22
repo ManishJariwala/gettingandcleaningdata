@@ -77,7 +77,7 @@ xdata1 <- data.table(xdata)
 tidy_data <- xdata1[,lapply(.SD,mean),by=list(activity,subjectid)]
 
 #step 15 - write data into a text file.
-write.table(tidy_data,"MJ_tidy_data.txt")
+write.table(tidy_data,"MJ_tidy_data.txt",row.name=FALSE)
 
 print ("Please find results in MJ_tidy_data.txt in your working directory. You can read back using into your local variable by read.table function")
 
