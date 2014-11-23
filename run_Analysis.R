@@ -63,20 +63,20 @@ ydata <- rbind(ytrain, ytest)
 activitylabels <- read.table("UCI HAR Dataset/activity_labels.txt")
 
 
-#Step  11 - Update the activity data with actual values from activity labels 
+#Step  12 - Update the activity data with actual values from activity labels 
 ydata <- data.frame(activitylabels$V2[match(ydata$V1,activitylabels$V1)])
 colnames(ydata) = "activity"
 
-#step 12 - add activity column to the main data
+#step 13 - add activity column to the main data
 xdata <- cbind(ydata,xdata)
 
-#step 13 - convert data frame into table.
+#step 14 - convert data frame into table.
 xdata1 <- data.table(xdata)
 
-#step 14 - Calculate mean of each dimension by grouping Activity and Subject
+#step 15 - Calculate mean of each dimension by grouping Activity and Subject
 tidy_data <- xdata1[,lapply(.SD,mean),by=list(activity,subjectid)]
 
-#step 15 - write data into a text file.
+#step 16 - write data into a text file.
 write.table(tidy_data,"MJ_tidy_data.txt",row.name=FALSE)
 
 print ("Please find results in MJ_tidy_data.txt in your working directory. You can read back using into your local variable by read.table function")
