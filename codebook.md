@@ -27,7 +27,7 @@ Each feature has mean and standard deviation.
 
 Activity provides information  about each of 30 subjects performing six activity - (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
 
-Final results shows mean of each feature group by activity and subject. 
+Final results shows mean of each feature group by activity and subject. The data is in wide format
 
 ====================
 "activity"

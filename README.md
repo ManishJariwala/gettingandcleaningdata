@@ -2,7 +2,7 @@ Getting and Cleaning Data Course at John Hopkins
 ======================
 
 Overall Summary
-  Programming assignment for the Getting and Cleaning Data is to create R code that would do following: download file from provided URL, tidy data, and calculate mean for dimensions that has "mean and standard deviation" values.  Final summarized result will be show mean for all selected dimension by activity and subject.  The attached code run_Analysis.R downloads the final result in MJ_tidy_data.txt.
+  Programming assignment for the Getting and Cleaning Data is to create R code that would do following: download file from provided URL, tidy the data as per guidelines, and calculate mean for dimensions that have "mean and standard deviation" values.  Final summarized result in a wide format will show mean for all selected dimension grouped by activity and subject.  The attached code run_Analysis.R downloads the final result in MJ_tidy_data.txt.
 
 Raw Data Information
   The source data is broken into two groups (test and train) and three major categories -observation, activity and subject. 30 subjects were divided into test (30%) and train (70%) group.  Each subject performed six activity (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING).  Following files are provides
@@ -32,7 +32,7 @@ Finally, code outputs the final results. (step 16 in code)
 
 Final Result Set
 
-The final result set provides mean for each selected dimension grouped by activity and subject. 
+The final result set provides mean for each selected dimension grouped by activity and subject. This in wide format
 
 
 
